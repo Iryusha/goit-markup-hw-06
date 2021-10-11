@@ -562,11 +562,11 @@ display: block;
 .footer-item:not(:last-child) {
     margin-bottom: 9px;
 }
-.footer-social {
+/* .footer-social {
     /* display: flex;
     flex-direction: column; */
     
-}
+
 .social-title {
     /* display: flex; */
     align-items: center;
@@ -811,3 +811,8 @@ display: block;
     visibility: hidden;
     pointer-events: none;
 }   
+/* --модальное окно-- */
+
+textarea {
+    resize: none;
+}
