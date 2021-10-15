@@ -488,22 +488,26 @@
             <label class="form-item" for="com">Комментарий</label>
             <textarea name="com" id="com" cols="30" rows="10" class="comment" placeholder="Введите текст"></textarea>
            </div>
-                         
-          <label for="agriment" class="form-checkbox">
+
            <input type="checkbox" name="agriment" value="agriment" 
-            id="agriment" class="input-checkbox">
-            <span class="checkbox-icon"></span>
-            <p class="agry-text"></p>
+           id="agriment" class="input-checkbox"> 
+          <label for="agriment" class="form-checkbox">
+           <span>
+               <svg class="check" width="16" height="15">
+                   <use href="../sprite.svg#icon-chek">
+                </use>
+               </svg>
+            </span>
             Cоглашаюсь с рассылкой и принимаю
-            
             <a class="form-agry" href="">Условия договорa</a>
            </label>
-         
-            <button type="submit" class="btn-send btn-submit">отправить</button>
+                
+           <button type="submit" class="btn-send btn-submit">отправить</button>
+        
         </form>
 
     </div>       
     </div>
         <script src="./js/modal.js"></script>
     </body>
-</html>
+</html> 
