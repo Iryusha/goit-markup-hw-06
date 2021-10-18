@@ -389,7 +389,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer link">
     
      <div class="head-footer-container">
         <div class="container footer-container">
@@ -448,23 +448,29 @@
             </li>
            </ul>
         </div> 
-    </div> 
+        </div> 
+    
     <form action class="footer-form">
-        <label for="mail" class="discription">подпишись на рассылку</label>
-    <div class="write-send">
-        <input type="email" name="email" id="mail" placeholder="E-mail" class="footer-input">
+        <strong class="strong">Подпишитесь на рассылку</strong>
+        <div class="write-send">
+        <input type="email" 
+            id="mail" 
+            placeholder="E-mail" 
+            class="footer-input">
         <button type="submite" class="btn-write">
             <span class="btn-title">Подписаться</span>
-            <svg class="icon-send">
+            <svg class="icon-send" width="24" height="24">
                 <use href="../imeges/sprite.svg#icon-send">
                  </use>
             </svg>
         </button>
-    </div>
-    </form>
-     </div>
     
+    </form>
+</div>
+       
     </footer>
+
+
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="close-btn" data-modal-close>
@@ -501,20 +507,20 @@
             <label class="form-item" for="com">Комментарий</label>
             <textarea name="com" id="com" cols="30" rows="10" class="comment" placeholder="Введите текст"></textarea>
            </div>
-
-           <input type="checkbox" name="agriment" value="agriment" 
-           id="agriment" class="input-checkbox"> 
-          <label for="agriment" class="form-checkbox">
-           <span>
-               <svg class="check" width="16" height="15">
-                   <use href="../sprite.svg#icon-chek">
-                </use>
-               </svg>
-            </span>
-            Cоглашаюсь с рассылкой и принимаю
-            <a class="form-agry" href="">Условия договорa</a>
-           </label>
-                
+           
+           <input type="checkbox" id="agreement" class="agreement hidden-visual"> 
+          <label for="agreement" class="form-checkbox">
+              <span>
+                <svg class="check" width="11" height="">
+                    <use href="../imeges/sprite.svg#icon-icon-vector">
+                 </use>
+                </svg>
+              </span>Cоглашаюсь с рассылкой и принимаю &#160; 
+          <a class="form-agry" href="">Условия договорa</a>
+          </label> 
+           
+            
+       
            <button type="submit" class="btn-send btn-submit">отправить</button>
         
         </form>
