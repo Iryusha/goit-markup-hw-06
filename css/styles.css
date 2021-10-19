@@ -1058,7 +1058,7 @@ top: 261px; */
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
         
 }
 .agreement:checked + .form-checkbox span {
