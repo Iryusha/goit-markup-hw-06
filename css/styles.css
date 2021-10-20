@@ -599,6 +599,8 @@ display: block;
 }
 .head-footer-container {
     display: flex;
+    /* padding-top: 60px;
+    /* padding-bottom: 60px; */
 }
 .footer-container {
     display: flex;
@@ -633,12 +635,13 @@ display: block;
 }
 .footer-web {
     margin-right: 70px;
-    margin-left: 215px;
+    /* margin-left: 215px; */
 }
 .footer-form {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
-    margin-right: 93px;
+    /* margin-right: 93px; */
+ 
 }
 .strong {
     font-family: Roboto;
@@ -650,12 +653,16 @@ display: block;
     text-transform: uppercase;
     display: block;
     color: var(--primary-title-color);
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    padding-top: 15px;
 }
 .write-send {
    display: flex;
+   margin-top: -25px;
+  
 }
 .footer-input {
+    outline: none;
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
@@ -676,6 +683,10 @@ display: block;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form:focus
+.footer-form:hover {
+    border: 1px solid rgba(255, 255, 255, 0.3); 
 }
 .btn-write {
     display: flex;
@@ -883,8 +894,8 @@ display: block;
     height: 30px;
     border-radius: 50%;
     position: absolute;
-    right: 8px;
-    top: 8px;
+    right: 18px;
+    top: 18px;
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -957,7 +968,7 @@ top: 261px; */
     height: 40px;
     left: 576px;
     top: 314px;
-
+    outline: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 
@@ -967,18 +978,21 @@ top: 261px; */
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-name:hover .form-icon,
-.form-name:focus .form-icon {
+.form-name:hover .form-icon {
     
     fill: #2196F3;
 }
-.form-name:hover .form-input,
-.form-name:focus .form-input {
+.form-input:focus+.form-icon {
+    fill: #2196F3;
+}
+.form-input:hover ,
+.form-input:focus {
     outline: none;
     border: 1px solid #2196F3;
+    
 }
-.form-name:hover .comment,
-.form-name:focus .comment {
+.comment:hover,
+.comment:focus {
     outline: none;
     border: 1px solid #2196F3;
 }
@@ -993,9 +1007,10 @@ top: 261px; */
     left: 12px;
     pointer-events: none;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    fill: var(--primary-black-color);
+    /* fill: var(--primary-black-color); */
 }
 .comment {
+    outline: none;
     padding: 12px 16px;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1008,7 +1023,7 @@ top: 261px; */
     line-height: 1.2;
     color: var(--primary-text-color);
     display: flex;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     font-style: normal;
     font-weight: normal;
     letter-spacing: 0.03em;
